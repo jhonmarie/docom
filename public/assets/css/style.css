@@ -1,0 +1,526 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+ 
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #2F4054;
+}
+.footer p {
+  margin: 20px 0;    
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+.alert-jim {
+    background-color: #fff;
+}
+.panel-jim {
+    border-color: #00CC99;   
+}
+.panel-jim>.panel-heading, .modal-header {
+    color: #fff;
+    background-color: #00CC99;
+    border-color: #00CC99;
+    padding: 15px;
+}
+.modal-header, .modal-footer {
+    padding: 10px;   
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.title-info,.title-desc {    
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+}
+.title-info {
+    color: #F39C2B;   
+}
+.name {
+    font-weight: bold;
+    color: #009771;
+}
+.text-italic {
+    font-style: italic;   
+}
+.text-bold {
+    font-weight: bold;
+}
+.page-divider {
+    margin-bottom: 30px;   
+}
+.table-list {
+    border:2px solid #ccc;   
+}
+.table-list thead th {
+    background-color: #ccc;
+    color: #232323;
+    padding: 20px 0;
+}
+.table-form tr td {
+    vertical-align: middle;
+}
+label {
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+/** multi level menu ***/
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+/* input[type="text"] {
+
+} */
+
+.tab1 {
+    margin-left: 10px;
+}
+.tab2 {
+    margin-left: 20px;
+}
+.tab3 {
+    margin-left: 30px;
+}
+
+#add {
+float: left;
+}
+
+ #searchbox
+{
+ 
+    
+    border-radius: 35px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;            
+    width: 500px;
+    height: 60px;
+    padding: 10px;
+    margin: 50px;
+    overflow: hidden; /* Clear floats */
+}
+#search, 
+#submit {
+    float: left;
+}
+
+#search {
+    padding: 5px 9px;
+    height: 35px;
+    width: 330px;
+    border: 1px solid #a4c3ca;
+    font: normal 13px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 50px 3px 3px 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+/* ----------------------- */
+
+#submit
+{       
+    background-color: #f7edc9;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 50px 50px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 35px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    width: 100px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+    #search::-webkit-input-placeholder {
+   color: #9c9c9c;
+   font-style: italic;
+}
+
+#search:-moz-placeholder {
+   color: #9c9c9c;
+   font-style: italic;
+}  
+
+#search:-ms-placeholder {
+   color: #9c9c9c;
+   font-style: italic;
+}   
+
+.modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+    /*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.set-pad {
+    padding-top:35px;
+}
+.set-row-pad {
+    padding-top:30px;
+    padding-bottom:50px;
+}
+/*=====================================
+  NAVBAR STYLES 
+    ===================================*/
+
+.logo-custom {
+    max-height: 40px;
+}
+
+#menu {
+    background-color: rgba(28, 43, 75, 1);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    min-height: 70px;
+}
+
+
+.navbar-inverse {
+    border-color: transparent;
+}
+
+    .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
+        color: #FFF;
+        padding: 22px 10px;
+    }
+
+
+/*=====================================
+  HOME STYLES 
+    ===================================*/
+.home-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/1-slide.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+    .home-sec .overlay {
+        background: rgba(38, 57, 88, 0.89);
+        min-height: 500px;
+    }
+
+    .home-sec h1 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 50px;
+        text-transform: uppercase;
+        padding-bottom: 35px;
+    }
+
+    .home-sec h3 {
+        text-transform: uppercase;
+    }
+
+
+
+.set-flexi {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    background-color: transparent;
+    border: 0px solid #000;
+    padding-top: 120px;
+}
+
+.flex-control-nav {
+    display: none!important;
+}
+
+.set-flexi a {
+    margin: 5px;
+}
+/*=====================================
+  TAG LINE STYLES 
+    ===================================*/
+
+.tag-line {
+    background: #E9E9E9;
+    color: #000;
+}
+
+    .tag-line h2 {
+        font-size: 20px;
+        font-weight: 900;
+        padding: 5px 10px 10px 5px;
+        color: #005E5A;
+    }
+
+        .tag-line h2 > i {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+/*=====================================
+  HEADER LINE STYLES 
+    ===================================*/
+.header-line {
+    font-weight: 900;
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    color: #000;
+}
+
+h1::after {
+    content: " ";
+    border: solid 2px #2f9484;
+    display: block;
+    width: 200px;
+    margin: 12px auto;
+}
+
+/*=====================================
+  ABOUT STYLES 
+  ===================================*/
+.about-div {
+    padding: 30px;
+}
+
+.icon-round-border {
+    border: 10px double #1A94C4;
+    color: #2f9484;
+    text-align: center;
+    padding-top: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+    .icon-round-border:hover {
+        color: #fff;
+        border: 10px double #fff;
+        background-color: #1A94C4;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+.about-div hr {
+    border: 1px solid #1A94C4;
+}
+
+.about-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-div p {
+    padding-top: 10px;
+}
+
+.btn-set {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    margin-bottom: 20px;
+}
+/*=====================================
+  FACULTY STYLES 
+  ===================================*/
+#faculty-sec {
+    background-color: #000;
+    color: #fff;
+}
+
+    #faculty-sec .header-line {
+        color: #fff;
+    }
+.faculty-div h4 {
+    line-height:30px;
+    font-weight:700;
+}
+.faculty-div {
+    padding: 30px;
+}
+
+    .faculty-div hr {
+        border: 1px solid #1A94C4;
+    }
+
+    .faculty-div h3 {
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .faculty-div p {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .faculty-div img {
+        border: 10px double #fff;
+    }
+
+/*=====================================
+  CONTACT STYLES 
+  ===================================*/
+#contact-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/contact.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+#contact-sec .overlay {
+        background: rgba(0, 0, 0, 0.76);
+        min-height: 600px;
+    }
+
+    #contact-sec h1 {
+        color:#fff;
+    }
+#contact-sec .form-control{
+    background-color:rgba(255, 255, 255, 0);
+    color:#fff;
+}
+/*=====================================
+  Footer STYLES 
+  ===================================*/
+#footer {
+    padding:5px 20px;
+    background-color:#2d3d5a;
+    text-align:right;
+    color:#fff;
+    font-size:15px;
+}
+#add {
+float: right;
+margin-right:-150px;
+padding-right: -50px;
+}
